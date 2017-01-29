@@ -87,6 +87,10 @@ therefore it is sufficient to issue the following command on the terminal in the
 
 The example introduced above, for instance, produces the following output:
 
+![Output for the example cluster](/images/output.png)
+
+which includes the following summary: 
+
     Hillary Clinton wanted to visit China last week.
 
 The algorithm has been successfully applied to English and Spanish by using an _ad-hoc_ **stop-word list** of 600 term ca.
