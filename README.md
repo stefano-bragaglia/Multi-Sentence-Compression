@@ -79,7 +79,13 @@ By visiting the _words_ in the **minimal cost path** (if any), the desired compr
 Results
 ----
 
-The example introduced above, for instance, produces the following summary:
+The project is organised as a [Gradle Application](https://docs.gradle.org/current/userguide/application_plugin.html), 
+therefore it is sufficient to issue the following command on the terminal in the root folder of the project 
+(provided that [Gradle]() is installed locally):
+
+    gradle clean run
+
+The example introduced above, for instance, produces the following output:
 
     Hillary Clinton wanted to visit China last week.
 

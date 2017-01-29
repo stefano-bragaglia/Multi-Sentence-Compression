@@ -1,0 +1,26 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoders are assigned the type
+             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <target>System.out</target>
+        <withJansi>true</withJansi>
+        <encoder>
+            <pattern>%green(%d{HH:mm:ss.SSS}) %boldYellow([%thread]) %highlight(%-5level) %cyan(%logger{36}) - %white(%msg%n)
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!--<logger name="edu.emory.clir.clearnlp" level="WARN"/>-->
+    <!--<logger name="com.subgraph" level="DEBUG"/>-->
+    <!--<logger name="org.springframework" level="WARN"/>-->
+    <!--<logger name="org.springframework.boot" level="WARN"/>-->
+    <!--<logger name="org.eclispe.jetty" level="WARN"/>-->
+    <!--<logger name="org.thymeleaf" level="WARN"/>-->
+    <!--<logger name="org.hybernate" level="WARN"/>-->
+    <!--<logger name="boot" level="WARN"/>-->
+    <!--<logger name="boot.controllers" level="INFO"/>-->
+
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
