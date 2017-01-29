@@ -28,10 +28,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Path folder = Paths.get(args[0]);
 
-        OpenNLP.getSentenceDetector();
-        OpenNLP.getTokenizer();
-        OpenNLP.getPOSTagger();
-
         List<String> sentences = Arrays.asList(
                 "The wife of a former U.S. president Bill Clinton, Hillary Clinton, visited China last Monday.",
                 "Hillary Clinton wanted to visit China last month but postponed her plans till Monday last week.",
@@ -60,7 +56,7 @@ public class Main {
                 .build();
         Optional<String> summary = summarizer.process(sentences, stopWords);
         if (summary.isPresent()) {
-            System.out.println(summary.get());
+            System.out.println(" >> " +summary.get());
         } else {
             logger.info("No summary available.");
         }

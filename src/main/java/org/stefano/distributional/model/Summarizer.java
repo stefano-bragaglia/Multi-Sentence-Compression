@@ -153,7 +153,8 @@ public final class Summarizer {
         @Override
         public RequiresEncoder on(Path folder) {
             requireNonNull(folder, "'graph' is null");
-            if (!Files.isDirectory(folder)) {
+            folder = folder.toAbsolutePath().normalize();
+            if (Files.exists(folder) && !Files.isDirectory(folder)) {
                 throw new IllegalArgumentException("'graph' is not a folder: " + folder);
             }
             currentFolder = folder;

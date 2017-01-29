@@ -4,5 +4,11 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Multi-Sentence-Compression_main" target="1.8" />
+      <module name="Multi-Sentence-Compression_test" target="1.8" />
+      <module name="Multi-Sentence_Compression_main" target="1.8" />
+      <module name="Multi-Sentence_Compression_test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

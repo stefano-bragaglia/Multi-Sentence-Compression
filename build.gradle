@@ -23,7 +23,7 @@ targetCompatibility = 1.8
 mainClassName = "org.stefano.distributional.Main"
 
 run { // Neo4j DB folder
-    args "/Users/stefano/Documents/compression.db".split()
+    args "./build/compression.db/".split()
 }
 
 applicationDefaultJvmArgs = ["-Dgreeting.language=en", "-Xmx12G", "-XX:+UseG1GC", "-XX:+UseStringDeduplication", "-Xss32M"]

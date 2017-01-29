@@ -9,4 +9,4 @@
  * in the user guide at https://docs.gradle.org/3.2.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'Multi-Sentence Compression'
+rootProject.name = 'Multi-Sentence-Compression'
