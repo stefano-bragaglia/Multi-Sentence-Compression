@@ -29,5 +29,5 @@ Given the following cluster of related sentences:
 
 the resulting `word graph` is presented below.
 
-![alt text](/images/word-graph.png)
+![Word graph for the example cluster](/images/word-graph.png)
 
