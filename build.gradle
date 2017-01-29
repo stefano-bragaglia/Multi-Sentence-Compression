@@ -29,13 +29,15 @@ run { // Neo4j DB folder
 applicationDefaultJvmArgs = ["-Dgreeting.language=en", "-Xmx12G", "-XX:+UseG1GC", "-XX:+UseStringDeduplication", "-Xss32M"]
 
 jar {
+    archiveName = baseName + '.' + extension
     from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
     }
     manifest {
         attributes 'Implementation-Title': rootProject.name, 'Implementation-Version': version, 'Main-Class': mainClassName
     }
-    archiveName = baseName + '.' + extension
 }
 
 tasks.withType(JavaCompile) {
