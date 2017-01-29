@@ -3,7 +3,7 @@ Multi-Sentence Compression
 
 Compressing a cluster of related sentences into a single sentence that retains the most relevant non-redundant concepts from the original cluster and is grammatically sound is a complex task.
 
-This project implements the method suggested in ["Multi-Sentence Compressing: Finding Shortest Paths in Word Graphs"](http://www.aclweb.org/anthology/C10-1037) which is based upon shortest paths in word graphs.
+This project implements the method suggested in ["Multi-Sentence Compressing: Finding Shortest Paths in Word Graphs"](http://www.aclweb.org/anthology/C10-1037) (**Katja Filippova.** Google Inc. _In Proc of 23rd Intl Conf COLING, 2010._) which is based upon shortest paths in word graphs.
 
 Specifically, we use:
 * [OpenNLP](https://opennlp.apache.org) for basic sentence detection, tokenisation and POD tagging
